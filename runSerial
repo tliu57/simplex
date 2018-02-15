@@ -1,0 +1,5 @@
+gcc -o simplex simplex.c
+./simplex <infile1
+#./simplex <infile2
+#./simplex <infile3
+#./simplex <infile4

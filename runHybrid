@@ -1,0 +1,8 @@
+#export OMP_NUM_THREADS=4
+export KMP_AFFINITY=norespect,scatter
+use intel-mvapich-1.1
+mpicc -openmp -o simplex_hybrid simplex_hybrid.c
+mpiexec -pernode ./simplex_hybrid <infile1
+#mpiexec -pernode ./simplex_hybrid <infile2
+#mpiexec -pernode ./simplex_hybrid <infile3
+#mpiexec -pernode ./simplex_hybrid <infile4

@@ -1,0 +1,4 @@
+use intel-mvapich-1.1
+mpicc -mpilog -o simplex_mpi simplex_mpi.c
+#mpiexec -n 16 simplex_mpi <infile1
+mpiexec -n 4 simplex_mpi <infile2
